@@ -1,0 +1,22 @@
+{
+  "name": "ts-bl",
+  "description": "Shared business logics.",
+  "version": "0.0.1",
+  "license": "ISC",
+  "author": "Zulfahmi Ahmad",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "luxon": "^1.22.2"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "^3.38.1",
+    "@types/lodash": "^4.14.149",
+    "@types/luxon": "^1.22.0",
+    "@types/node": "^13.1.0",
+    "typescript": "^3.7.4"
+  }
+}

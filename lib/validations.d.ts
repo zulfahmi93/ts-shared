@@ -12,6 +12,7 @@ declare class Validator {
     equals(other: ValidatableType, errorMessage: string): this;
     notEquals(other: ValidatableType, errorMessage: string): this;
     minLength(length: number, errorMessage: string): this;
+    maxLength(length: number, errorMessage: string): this;
     minUppercase(count: number, errorMessage: string): this;
     minLowercase(count: number, errorMessage: string): this;
     minDigit(count: number, errorMessage: string): this;

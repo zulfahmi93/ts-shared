@@ -141,6 +141,19 @@ class Validator {
     return this;
   }
 
+  public maxLength(length: number, errorMessage: string): this {
+    const value = this._result.originalValue;
+    if (!isString(value)) {
+      return this;
+    }
+
+    if ((value as string).length > length) {
+      this._result.invalidate(errorMessage);
+    }
+
+    return this;
+  }
+
   public minUppercase(count: number, errorMessage: string): this {
     const value = this._result.originalValue;
     if (!isString(value)) {
